@@ -6,7 +6,6 @@ async function loadNav() {
         document.querySelector("nav-placeholder").innerHTML = html;
     } catch (err) {
         console.error("Navigation failed to load", err);
-        // 兜底导航，防止导航空白扣分
         document.querySelector("nav-placeholder").innerHTML = `
       <nav>
         <a href="index.html">Home</a>
