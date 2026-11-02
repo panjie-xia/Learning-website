@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Quotes</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <nav-placeholder></nav-placeholder>
+        <script src="nav.js"></script>
+
+        <div class="container">
+            <section class="hero" id="quoteHero">
+                <h1>Quote of the day</h1>
+                <p id="randomQuote"></p>
+            </section>
+            <div class="card">
+                <h2>My collection of quotes</h2>
+                <ul id="quoteList">
+                    <li>Code is read more often than it is written.</li>
+                    <li>First solve the problem, then write the code.</li>
+                    <li>Simple is better than complex.</li>
+                    <li>
+                        Any fool can write code that a computer can understand.
+                    </li>
+                    <li>
+                        Programming isn't about what you know; it's about what
+                        you can figure out.
+                    </li>
+                    <li>
+                        The best error message is the one that never shows up.
+                    </li>
+                    <li>Talk is cheap. Show me the code.</li>
+                    <li>Make it work, make it right, make it fast.</li>
+                    <li>
+                        Debugging is like being a detective in a crime movie
+                        where you are also the murderer.
+                    </li>
+                    <li>Learning to code is learning to think.</li>
+                    <li>Don’t repeat yourself.</li>
+                    <li>Optimism is an occupational hazard of programming.</li>
+                    <li>Good code is its own best documentation.</li>
+                    <li>
+                        Software is a gas; it expands to fill its container.
+                    </li>
+                    <li>
+                        Sometimes it pays to stay in bed on Monday, rather than
+                        spending the rest of the week debugging Monday’s code.
+                    </li>
+                    <li>
+                        Measuring programming progress by lines of code is like
+                        measuring aircraft building progress by weight.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            const quotes = [
+                "Code is read more often than it is written.",
+                "First solve the problem, then write the code.",
+                "Simple is better than complex.",
+                "Any fool can write code that a computer can understand.",
+                "Programming isn't about what you know; it's about what you can figure out.",
+                "The best error message is the one that never shows up.",
+                "Talk is cheap. Show me the code.",
+                "Make it work, make it right, make it fast.",
+                "Debugging is like being a detective in a crime movie where you are also the murderer.",
+                "Learning to code is learning to think.",
+                "Don’t repeat yourself.",
+                "Optimism is an occupational hazard of programming.",
+                "Good code is its own best documentation.",
+                "Software is a gas; it expands to fill its container.",
+                "Sometimes it pays to stay in bed on Monday, rather than spending the rest of the week debugging Monday’s code.",
+                "Measuring programming progress by lines of code is like measuring aircraft building progress by weight.",
+            ];
+            const random = quotes[Math.floor(Math.random() * quotes.length)];
+            document.getElementById("randomQuote").textContent = random;
+        </script>
+    </body>
+</html>
